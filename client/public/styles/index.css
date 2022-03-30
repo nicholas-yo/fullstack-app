@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+body {
+	display: grid;
+	background-color: #20232a;
+	place-content: center;
+	height: 100vh;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+	width: max-content;
+}
+
+form input,
+button {
+	border: none;
+	width: 300px;
+	height: 40px;
+	font-size: 1rem;
+	color: #20232a;
+	border-radius: 2px;
+}
+
+form button {
+  background-color: #61dbfa;
+  cursor: pointer;
+  transition: background-color .2s;
+}
+
+form button:hover {
+  background-color: #61dbfac4;
+}
+
+form input {
+  padding-left: 12px;
+	background: aliceblue;
+}
+

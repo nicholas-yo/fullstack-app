@@ -1,0 +1,35 @@
+{
+  "module": {
+    "type": "es6"
+  },
+  "minify": true,
+  "jsc": {
+    "loose": true,
+    "target": "es2015",
+    "preserveAllComments": false,
+    "parser": {
+      "syntax": "typescript",
+      "tsx": true
+    },
+    "transform": {
+      "react": {
+        "pragma": "React.createElement",
+        "throwIfNamespace": true,
+        "useBuiltins": true,
+        "refresh": true,
+        "runtime": "classic"
+      },
+      "optimizer": {
+        "globals": {
+          "vars": {
+            "__DEBUG__": "true"
+          }
+        },
+        "jsonify": {
+          "minCost": 0
+        },
+        "simplify": false
+      }
+    }
+  }
+}
