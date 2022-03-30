@@ -99,7 +99,7 @@ async fn register(conn: Connection<'_, Db>, user_form: Form<User<'_>>) -> JsonVa
         }
         .save(db)
         .await
-        .expect("could not insert post");
+        .expect("couldn't insert user");
 
         json!(RegisterResponse {
             msg: "User successfully created",
